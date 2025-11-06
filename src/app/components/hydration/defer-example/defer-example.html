@@ -1,0 +1,65 @@
+<!--<app-heavy-component></app-heavy-component>-->
+
+<!--<div>
+  @defer (on hover) {
+    <app-heavy-component></app-heavy-component>
+  } @placeholder {
+    <div>placeholder...</div>
+  }
+</div>-->
+<!--remove from if scope for it to work properly-->
+<!--<button (click)="showButton()">Show button</button>
+@if (!isButtonHidden) {
+  <button #buttonExample>Click me to defer</button>
+}
+@defer (on interaction(buttonExample)) {
+  <app-heavy-component></app-heavy-component>
+} @placeholder {
+  <div>placeholder...</div>
+}-->
+
+<!--<div style="height: 150vh"></div>
+@defer (on viewport) {
+  <app-heavy-component></app-heavy-component>
+} @placeholder {
+  <div>placeholder...</div>
+}-->
+
+<!--@defer (on timer(5s)) {
+  <app-heavy-component></app-heavy-component>
+} @placeholder {
+  <div>placeholder...</div>
+}-->
+
+<!--
+@defer (when shouldDefer) {
+  <app-heavy-component></app-heavy-component>
+} @placeholder {
+  <div>placeholder...</div>
+}
+-->
+
+<!--<div style="height: 150vh"></div>
+@defer (on viewport; prefetch on idle) {
+  <app-heavy-component></app-heavy-component>
+} @placeholder {
+  <div>placeholder...</div>
+}-->
+
+<!--
+@defer (on timer(5s)) {
+  <app-heavy-component></app-heavy-component>
+} @placeholder {
+  <div>placeholder...</div>
+} @loading {
+  <div>loading...</div>
+} @error {
+  <div>error...</div>
+}
+-->
+
+@defer (hydrate on timer(5s)) {
+  <app-heavy-component></app-heavy-component>
+} @placeholder {
+  <div>placeholder...</div>
+}

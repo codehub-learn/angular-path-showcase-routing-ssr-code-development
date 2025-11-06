@@ -16,7 +16,6 @@ export class ServerExample implements OnInit {
   }
 
   ngOnInit(): void {
-
     console.error(this.randomGeneratedNumber);
     console.error(this.platformId);
     console.error(isPlatformServer(this.platformId));

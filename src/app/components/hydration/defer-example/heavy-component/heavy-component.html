@@ -1,0 +1,12 @@
+<table>
+  <tbody>
+    @for (item of items; track item.id){
+      <tr>
+        <td>Item {{item.id}}</td>
+        <td>
+          <button (click)="showAlert(item.text)">Check message</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
